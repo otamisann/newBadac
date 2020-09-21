@@ -8,6 +8,8 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Estimation | Badac Konstruk Inc</title>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="vendors/linericon/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -18,6 +20,15 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet"
+        href="https://badackonstruck.netlify.app/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/custombox/dist/custombox.min.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://badackonstruck.netlify.app/assets/vendor/custombox/dist/custombox.min.css">
 </head>
 
 <body>
@@ -48,12 +59,13 @@
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Have an account?</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Have an account?</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Signup</a></li>
                                 </ul>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -77,235 +89,408 @@
     <!--================End Home Banner Area =================-->
 
     <!--================Design Area =================-->
-    <section class="design_area p_120">
+    <!-- Checkout Form Section -->
+    <div class="container space-2 space-4-top--lg ">
+        <div class="row">
+            <div class="col-lg-12 center">
+                <!-- Checkout Form -->
+                <form class="js-validate js-step-form pr-lg-4" data-progress-id="#stepFormProgress"
+                    data-steps-id="#stepFormContent" novalidate="novalidate">
+                    <!-- Step Form Header -->
 
-        <div class="container">
-            <h4> Client Information</h4>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <form action="#">
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="first_name" placeholder="First Name"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-                        <div class="mt-10">
-                            <input type="email" class="form-control" name="last_name" placeholder="Email Address"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
-                                class="single-input">
-                        </div>
+                    <!-- End Step Form Header -->
+                    <br>
+                    <br>
 
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-4 mt-sm-30 element-wrap">
-                    <div class="single-element-widget">
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="last_name" placeholder="Last Name"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
-                                class="single-input">
-                        </div>
-                        <div class="mt-10">
-                            <input type="number" class="form-control" name="first_name" placeholder="Contact Number"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-                        <!-- <div class="mt-10">
-                            <input type="text" class="form-control" name="first_name" placeholder="Contact Person"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
-        <div class="container">
-            <h4> Property Information</h4>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-
-                    <form action="#">
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="first_name" placeholder="Location of Property"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-                        <div class="mt-10">
-                            <input type="number" class="form-control" name="last_name" placeholder="Lot Area"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
-                                class="single-input">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-4 mt-sm-30 element-wrap">
-                    <div class="single-element-widget">
-                        <div class="mt-10">
-                            <input type="number" class="form-control" name="first_name" placeholder="Length"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-                        <div class="mt-10">
-                            <input type="number" class="form-control" name="first_name" placeholder="Width"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br>
-        <div class="container">
-            <h4> Desired Specifications</h4>
-            <d class="row">
-                <div class="col-lg-6 col-md-6">
-
-                    <form action="#">
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="first_name" placeholder="Floor Area"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
-                        </div>
-
-                        <div class="mt-10 form-group">
-                                <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                                <select class="mb-2 w-100">
-                                    <option value="" disabled selected>Number of Floor levels</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 or more</option>
-                                </select>
-                        </div>
-
-                        <div class="mt-10 form-group" >
-                                <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                                <select class="mb-2 w-100">
-                                    <option value="" disabled selected>Number of Rooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 or more</option>
-                                </select>
-                        </div>
-
-                        <div class="mt-10 form-group" >
-                                <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                                <select class="mb-2 w-100">
-                                    <option value="" disabled selected>Number of Toilet and Baths</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 or more</option>
-                                </select>
-                        </div>
-                        
-                        
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-4 mt-sm-30 element-wrap">
-                    <div class="single-element-widget">
-                        <div class="mt-10">
-                            <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                            <select class="mb-2 w-100">
-                                <option value="" disabled selected>Classification</option>
-                                <option>Residential</option>
-                                <option>Commercial</option>
-                                <option>Industrial</option>
-                            </select>
-                        </div>
-                        <div class="mt-10">
-                            <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                            <select class="mb-2 w-100">
-                                <option value="" disabled selected>Preferred Design</option>
-                                <option>Asian</option>
-                                <option>Contemporary</option>
-                                <option>Meditterenean</option>
-                                <option>Zen</option>
-                            </select>
-                        </div>
-                        <div class="mt-10">
-                            <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                            <select class="mb-2 w-100">
-                                <option value="" disabled selected>Preferred Finish</option>
-                                <option>Basic</option>
-                                <option>Standard</option>
-                                <option>Semi-Elegent</option>
-                                <option>Elegant</option>
-                            </select>
-                        </div>
-                        <div class="mt-10">
-                            <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                            <select class="mb-2 w-100">
-                                <option value="" disabled selected>Garage</option>
-                                <option>None</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3 or more</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-lg-8">
-                        <div class="single-element-widget ">
-                            <div class="mt-10">
-                                <textarea type="single-textarea" class="form-control" placeholder="Other description/Project notes"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"
-                                    required></textarea>
+                    <div id="stepFormContent">
+                        <!-- Client Info -->
+                        <div id="personal_info_step" class="active">
+                            <div class="row">
+                                <div class="main_title col-md-12">
+                                    <h2>Client Information</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos reprehenderit
+                                        nostrum nihil, dolore natus deleniti vel suscipit neque ut nam!</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            First name
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="text" name="firstName"
+                                                required placeholder="Jack" aria-label="Jack"
+                                                data-msg="Please enter your frist name." data-error-class="u-has-error"
+                                                data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Last name
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="text" name="lastName" required
+                                                placeholder="Wayley" aria-label="Wayley"
+                                                data-msg="Please enter your last name." data-error-class="u-has-error"
+                                                data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mt-10">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Email address
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="email" name="email" required
+                                                placeholder="jackwayley@gmail.com" aria-label="jackwayley@gmail.com"
+                                                data-msg="Please enter a valid email address."
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="col-md-6 mb-10">
+                                    <!-- Input -->
+                                    <div class="js-form-message mt-10">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Phone
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" name="phone" type="number" required
+                                                placeholder="09211998911" aria-label="09211998911"
+                                                data-msg="Please enter your phone number."
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="w-100"></div>
                             </div>
+                            <!-- End client info -->
+                            <!-- Buttons -->
+                            <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-10">
+                                <a class="d-block mb-3 mb-sm-0" href="services.html">Go to other services
+                                </a>
+                                <button type="button" class="btn btn-primary"
+                                    style="background-color: #0080ff;color: white;"
+                                    data-next-step="#property_info_step">Next step <i
+                                        class="fa fa-arrow-right mr-2"></i></button>
+                            </div>
+                            <!-- End Buttons -->
+                            <br>
+                            <hr class="my-9">
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="custom-file mt-10">
-                            <input type="file" class="custom-file-input" id="customFile">
-                            <label class="custom-file-label" for="customFile">Upload your drawing</label>
-                        </div>
-                    </div>
-                
-            </div>
-        </div><br><br>
-        <div class="container">
-            <h4> Payment Construction</h4>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
+                        <!-- End Client Info -->
 
-                    <form action="#">
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="first_name" placeholder="mm/dd/yyyy"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
-                                class="single-input">
+                        <!-- property info -->
+                        <div id="property_info_step" style="display: none;">
+                            <div class="row">
+                                <div class="main_title col-md-12">
+                                    <h2>Property Information</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus iusto commodi sapiente vitae consequatur quia iure deleniti quo quae, odit molestias alias soluta reiciendis reprehenderit, quos illo earum inventore!</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Location of Property
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="text" name="lotarea" required
+                                                placeholder="" data-msg="Please enter the Location of Propert."
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Lot Area
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="number" name="lastName"
+                                                required placeholder="50 sqm." aria-label="Wayley"
+                                                data-msg="Please enter the lot area." data-error-class="u-has-error"
+                                                data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-6 mb-10">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6 mt-10">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Length
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" type="number" name="lenght"
+                                                data-msg="Please enter the length" required
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="col-md-6 mb-10">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6 mt-10">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Width
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" name="number" type="number"
+                                                data-msg="Please enter the width." required
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                            </div>
+                            <!-- Buttons -->
+                            <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+                                <a class="d-block mb-3 mb-sm-0" style="color: #588bae;" href="javascript:;"
+                                    data-previous-step="#personal_info_step">
+                                    <i class="fa fa-arrow-left mr-2"></i>
+                                    Back to Client info
+                                </a>
+                                <button type="button" class="btn btn-primary"
+                                    style="background-color: #0080ff;color: white;"
+                                    data-next-step="#desired_specs_step">Next step <i
+                                        class="fa fa-arrow-right mr-2"></i></button>
+                            </div>
+                            <!-- Buttons -->
+                            <br>
+                            <hr class="my-9">
                         </div>
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="last_name" placeholder="Approximate Budget"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
-                                class="single-input">
-                        </div>
-                        <div class="mt-10">
-                            <input type="text" class="form-control" name="last_name" placeholder="Payment Scheme"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
-                                class="single-input">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-4 mt-sm-30 element-wrap">
-                    <div class="single-element-widget ">
-                        <div class="mt-10">
-                            <textarea type="single-textarea " class="form-control" placeholder="Message"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"
-                                required></textarea>
-                        </div>
+                        <!-- End property info -->
+                        <!-- Payment -->
+                        <div id="desired_specs_step" style="display: none;">
+                            <div class="row">
+                                <div class="main_title col-md-12">
+                                    <h2>Desired Specifications</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus iusto commodi sapiente vitae consequatur quia iure deleniti quo quae, odit molestias alias soluta reiciendis reprehenderit, quos illo earum inventore!</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="js-form-message mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Floor Area
+                                        </label>
+                                        <div class="js-focus-state input-group form">
+                                            <input class="form-control form__input" name="number" type="number"
+                                                data-msg="Please enter the floor area" required
+                                                data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase">
+                                            Classification
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">Residential</option>
+                                            <option value="comm">Commercial</option>
+                                            <option value="ind">Industrial</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
 
-                    </div>
-                    <div class=" text-right">
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Number of Floors
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">1</option>
+                                            <option value="comm">2</option>
+                                            <option value="ind">3</option>
+                                            <option value="ind">4 and more</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
 
-                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Preferred Design
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">Asian</option>
+                                            <option value="comm">Zen</option>
+                                            <option value="ind">Contemporary</option>
+                                            <option value="ind">Meditteranean</option>
+                                            <option value="ind">others</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Number of Rooms
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">1</option>
+                                            <option value="comm">2</option>
+                                            <option value="ind">3</option>
+                                            <option value="ind">4</option>
+                                            <option value="ind">5 and more</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Preferred Finish
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">Basic</option>
+                                            <option value="comm">Standard</option>
+                                            <option value="ind">Semi-Elegant</option>
+                                            <option value="ind">Elegant</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Number of Toilets and Baths
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">1</option>
+                                            <option value="comm">2</option>
+                                            <option value="ind">3</option>
+                                            <option value="ind">4</option>
+                                            <option value="ind">5 and more</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input -->
+                                    <div class="mb-6">
+                                        <label class="h6 small d-block text-uppercase mt-10">
+                                            Car Garage
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-group w-100">
+                                            <option selected>Select Classification
+                                            <option>
+                                            <option value="res">None</option>
+                                            <option value="res">1</option>
+                                            <option value="comm">2</option>
+                                            <option value="ind">3 or more</option>
+                                        </select>
+                                    </div>
+                                    <!-- End Input -->
+                                </div>
+
+                                <!-- Input -->
+                                <div class="col-md-6">
+                                    <label class="h6 small d-block text-uppercase mt-10">
+                                        Other descriptions / Project Notes
+                                        <div class="js-form-message mb-10">
+                                            <div class="js-focus-state input-group form">
+                                                <textarea class="form-control form__input" rows="6" name="text"
+                                                    placeholder="Tell us more about your specifications"
+                                                    aria-label="Tell us more about your specifications"
+                                                    data-error-class="u-has-error"
+                                                    data-success-class="u-has-success"></textarea>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- End Input -->
+
+                                <!-- upload file -->
+                                <div class="col-md-6 mb-10">
+                                    <label class="h6 small d-block text-uppercase mt-10">
+                                        Upload your Drawings
+                                    </label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                </div>
+                                <!-- end upload -->
+                            </div>
+                            <!-- Buttons -->
+                            <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+                                <a class="d-block mb-3 mb-sm-0" style="color: #588bae" href="javascript:;"
+                                    data-previous-step="#property_info_step">
+                                    <i class="fa fa-arrow-left mr-2" style="color: #588bae"></i>
+                                    Property Info
+                                </a>
+                                <button type="button" style="background-color: #0080ff;color: white;border: none;"
+                                    class="btn btn-primary mr-2">Submit Inquiry<i
+                                    class="fas fa-paper-plane ml-2"></i></button>
+                            </div>
+                            <!-- End Buttons -->
+                        </div>
+                        <!-- End Payment -->
                     </div>
-                </div>
+                    <!-- End Step Form Content -->
+                </form>
+                <!-- End Checkout Form -->
             </div>
         </div>
-    </section>
-    <!--================End Design Area =================-->
+    </div>
+    <!-- End Checkout Form Section -->
 
+
+    <!--================End Design Area =================-->
+    <br>
+    <br>
+    <br>
     <!--================Post Slider Area =================-->
     <section class="post_slider_area">
         <div class="main_title">
@@ -379,6 +564,8 @@
     <!--================End Post Slider Area =================-->
 
 
+
+
     <!--================Footer Area =================-->
     <footer class="footer_area p_120">
         <div class="container">
@@ -440,10 +627,21 @@
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://badackonstruck.netlify.app/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script
+        src="https://badackonstruck.netlify.app/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script
+        src="https://badackonstruck.netlify.app/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.validation.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.validation.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/stellar.js"></script>
+    <script src="js/js.step-form.js"></script>
+    <script src="hs/js.step-form.js"></script>
     <script src="vendors/lightbox/simpleLightbox.min.js"></script>
     <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
@@ -455,6 +653,102 @@
     <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
     <script src="vendors/counter-up/jquery.counterup.js"></script>
     <script src="js/theme.js"></script>
+
+    <!-- JS Global Compulsory -->
+    <script src="https://badackonstruck.netlify.app/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="https://badackonstruck.netlify.app/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script
+        src="https://badackonstruck.netlify.app/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script
+        src="https://badackonstruck.netlify.app/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/custombox/dist/custombox.min.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+    <script
+        src="https://badackonstruck.netlify.app/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <!-- JS Space -->
+    <script src="https://badackonstruck.netlify.app/assets/js/hs.core.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.header.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.unfold.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.validation.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/helpers/hs.focus-state.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.modal-window.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.show-animation.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.validation.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.step-form.js"></script>
+    <script src="https://badackonstruck.netlify.app/assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+    <script>
+        $(window).on('load', function () {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991,
+                hideTimeOut: 0
+            });
+        });
+
+        $(document).on('ready', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of unfold component
+            $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                afterOpen: function () {
+                    if (!$('body').hasClass('IE11')) {
+                        $(this).find('input[type="search"]').focus();
+                    }
+                }
+            });
+
+            // initialization of form validation
+            $.HSCore.components.HSValidation.init('.js-validate', {
+                rules: {
+                    confirmPassword: {
+                        equalTo: '#password'
+                    }
+                }
+            });
+
+            // initialization of forms
+            $.HSCore.helpers.HSFocusState.init();
+
+            // initialization of malihu scrollbar
+            $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+            // initialization of autonomous popups
+            $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-signup-modal', {
+                autonomous: true
+            });
+
+            // initialization of show animations
+            $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+            // initialization of form validation
+            $.HSCore.components.HSValidation.init('.js-validate');
+
+            // initialization of step form
+            $.HSCore.components.HSStepForm.init('.js-step-form');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+    </script>
 </body>
 
 </html>

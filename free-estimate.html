@@ -119,7 +119,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="text" name="firstName"
+                                            <input class="form-control form__input" type="text" name="FirstName"
                                                 required placeholder="Juan" aria-label="Juan"
                                                 data-msg="Please enter your First Name" data-error-class="u-has-error"
                                                 data-success-class="u-has-success">
@@ -135,7 +135,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="text" name="lastName" required
+                                            <input class="form-control form__input" type="text" name="LastName" required
                                                 placeholder="Dela Cruz" aria-label="Dela Cruz"
                                                 data-msg="Please enter your Last Name." data-error-class="u-has-error"
                                                 data-success-class="u-has-success">
@@ -152,7 +152,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="email" name="email" required
+                                            <input class="form-control form__input" type="email" name="Email" required
                                                 placeholder="juandc@example.com" aria-label="juandc@example.com"
                                                 data-msg="Please enter a valid Email address."
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
@@ -167,7 +167,7 @@
                                             Contact Number
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" name="phone" type="number" required
+                                            <input class="form-control form__input" name="ContactNum" type="number" required
                                                 placeholder="09211998911" aria-label="09211998911"
                                                 data-msg="Please enter your Phone number."
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
@@ -208,7 +208,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="text" name="location_property" required
+                                            <input class="form-control form__input" type="text" name="e_Property_Loc" required
                                                 placeholder="" data-msg="Please enter the Location of your Property."
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
                                         </div>
@@ -223,7 +223,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="number" name="lot_area"
+                                            <input class="form-control form__input" type="number" name="e_Lot_Area"
                                                 required placeholder="50 sqm." aria-label="50 sqm"
                                                 data-msg="Please enter the Lot area." data-error-class="u-has-error"
                                                 data-success-class="u-has-success">
@@ -240,7 +240,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" type="number" name="length"
+                                            <input class="form-control form__input" type="number" name="e_Length"
                                                 data-msg="Please enter the length" placeholder="30 (use meters)" required
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
                                         </div>
@@ -254,7 +254,7 @@
                                             Width
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" name="width" type="number"
+                                            <input class="form-control form__input" name="e_Width" type="number"
                                                 data-msg="Please enter the width." placeholder="45 (use meters)" required
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
                                         </div>
@@ -293,7 +293,7 @@
                                             Floor Area
                                         </label>
                                         <div class="js-focus-state input-group form">
-                                            <input class="form-control form__input" name="floor_area" type="number"
+                                            <input class="form-control form__input" name="e_Floor_Area" type="number"
                                                 data-msg="Please enter the floor area" placeholder="47 sqm (use meters)" required
                                                 data-error-class="u-has-error" data-success-class="u-has-success">
                                         </div>
@@ -307,7 +307,7 @@
                                             Classification
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Classification">
                                             <option selected>Select Classification
                                             <option>
                                             <option value="res">Residential</option>
@@ -325,7 +325,7 @@
                                             Number of Floors
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Floors_Levels">
                                             <option selected>Choose Number of Floors
                                             <option>
                                             <option value="1">1</option>
@@ -344,7 +344,7 @@
                                             Preferred Design
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Design_Classification">
                                             <option selected>Select Design
                                             <option>
                                             <option value="asian">Asian</option>
@@ -364,7 +364,7 @@
                                             Number of Rooms
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Rooms">
                                             <option selected>Choose Number of Rooms
                                             <option>
                                             <option value="1">1</option>
@@ -384,7 +384,7 @@
                                             Preferred Finish
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Finish">
                                             <option selected>Select Preferred finish
                                             <option>
                                             <option value="basic">Basic</option>
@@ -403,7 +403,7 @@
                                             Number of Toilets and Baths
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Toilet_Bath">
                                             <option selected>Choose Number of Toilets and Baths
                                             <option>
                                             <option value="1">1</option>
@@ -423,7 +423,7 @@
                                             Car Garage
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <select class="form-group w-100">
+                                        <select class="form-group w-100" name="e_Car_Garage">
                                             <option selected>Choose Number of Garage
                                             <option>
                                             <option value="0">None</option>
@@ -441,7 +441,7 @@
                                         Other descriptions / Project Notes
                                         <div class="js-form-message mb-10">
                                             <div class="js-focus-state input-group form">
-                                                <textarea class="form-control form__input" rows="6" name="text"
+                                                <textarea class="form-control form__input" rows="6" name="Description"
                                                     placeholder="Tell us more about your other specifications"
                                                     aria-label="Tell us more about your other specifications"
                                                     data-error-class="u-has-error"
@@ -458,7 +458,7 @@
                                     </label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                        <label class="custom-file-label"  name="Drawing" for="customFile">Choose file</label>
                                     </div>
                                 </div>
                                 <!-- end upload -->

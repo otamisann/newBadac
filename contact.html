@@ -23,7 +23,7 @@
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu" id="mainNav">
-            	<nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<a class="navbar-brand logo" href="index.html"><img src="img/BKIlogo.png" width="83px" height="55px" alt=""></a><br>
@@ -36,7 +36,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li> 
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="free-estimate.html">Estimate</a>
                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a>
@@ -85,17 +85,17 @@
                     <div class="col-lg-3">
                         <div class="contact_info">
                             <div class="info_item">
-                                <i class="lnr lnr-home"></i>
+                                <i class="lnr lnr-home" style="color: #588bae;"></i>
                                 <h6>Cainta, Rizal</h6>
-                                <p>Santa monica bullevard</p>
+                                <p>Rose Ann Subdivision</p>
                             </div>
                             <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
+                                <i class="lnr lnr-phone-handset" style="color: #588bae;"></i>
                                 <h6><a href="#">865 337 91</a></h6>
                                 <p>Mon to Fri 9am to 6 pm</p>
                             </div>
                             <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
+                                <i class="lnr lnr-envelope" style="color: #588bae;"></i>
                                 <h6><a href="#">badackonstrukinc@yahoo.com</a></h6>
                                 <p>Send us your query anytime!</p>
                             </div>
@@ -105,17 +105,21 @@
                         <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="">Name</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
                                 </div>
                                 <div class="form-group">
+                                    <label for="">Email Address</label>
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
                                 </div>
                                 <div class="form-group">
+                                    <label for="">Subject</label>
                                     <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="">Message</label>
                                     <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
                                 </div>
                             </div>
@@ -129,7 +133,7 @@
         </section>
         <!--================Contact Area =================-->
         
-       <!--================Footer Area =================-->
+    <!--================Footer Area =================-->
         <footer class="footer_area p_120">
             <div class="container">
                 <div class="row footer_inner">
@@ -150,9 +154,19 @@
                     </div>
                     <div class="col-lg-5 col-sm-6">
                         <aside class="f_widget news_widget">
-                            
-                            
-                            
+                            <div class="f_title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <p>
+                                <a href="index.html" style="color: #588bae;">Home</a><br>
+                                <a href="about-us.html" style="color: #588bae;">About us</a><br>
+                                <a href="free-estimate.html" style="color: #588bae;">Estimate</a><br>
+                                <a href="fit-out.html" style="color: #588bae;">Fit-out</a><br>
+                                <a href="interior-design.html" style="color: #588bae;">Interior Design</a><br>
+                                <a href="projects.html" style="color: #588bae;">Projects</a><br>
+                                <a href="services.html" style="color: #588bae;">Services</a><br>
+                                <a href="contact.html" style="color: #588bae;">Contact</a><br>
+                            </p>
                         </aside>
                     </div>
                     <div class="col-lg-2">
@@ -169,9 +183,6 @@
                             </ul>
                         </aside>
                     </div>
-                </div>
-                <div class="copy_right_text">
-                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
         </footer>

@@ -271,7 +271,7 @@ button:focus {
 .home_banner_area {
   z-index: 1;
   background: url(../img/banner/background3.png) no-repeat;
-  width: 1263px;
+  width: 100%;
   height: 650px;}
   .home_banner_area .banner_inner {
     overflow: hidden;
